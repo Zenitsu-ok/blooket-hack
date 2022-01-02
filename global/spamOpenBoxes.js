@@ -1,9 +1,16 @@
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 (async () => {
-    const box = prompt('What box do you want to open? (EXAMPLE: Space)');
+    const box = prompt('What box do you want to open? (EXAMPLE: Spooky)');
     const amount = prompt('How many boxes do you want to open?');
-
+    Aquatic:0
+    Space:0
+    Blizzard:0
+    Spooky:0
+    Bot:0
+    Breakfast:0
+    Medieval:0
+    Wonderland:0
     const response = await fetch('https://api.blooket.com/api/users/verify-token', {
         method: "GET",
         headers: {
